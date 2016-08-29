@@ -6,12 +6,12 @@ from sklearn import datasets
 boston = datasets.load_boston()
 
 #Define the training and test datasets
-#The training set consists of the first 50% of the data (221 observations)
-#and the test set consists of the remaining 221 observations.
-boston_X_train = boston.data[:-221]
-boston_X_test = boston.data[-221:]
-boston_y_train = boston.target[:-221]
-boston_y_test = boston.target[-221:]
+#The training set consists of the first 50% of the data (506 observations)
+#and the test set consists of the remaining 253 observations.
+boston_X_train = boston.data[:-253]
+boston_X_test = boston.data[-253:]
+boston_y_train = boston.target[:-253]
+boston_y_test = boston.target[-253:]
 
 #Fit a linear regression model to boston_X_test and boston_y_test
 from sklearn import linear_model
