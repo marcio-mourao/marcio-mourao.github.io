@@ -17,7 +17,7 @@ model2=KMeans(n_clusters=8, n_init=10, init='k-means++')
 model3=KMeans(n_clusters=3, n_init=1, init='random')
 
 #Select the model, fit and display outcomes
-model=model3
+model=model2
 model.fit(X)
 aux_funcs.display_Iris(X,1,model.labels_)
 aux_funcs.display_Iris(X,2,iris.target)

@@ -1,7 +1,11 @@
 import aux_funcs
+import numpy as np
 import matplotlib.pyplot as plt
 
 from sklearn.cluster import KMeans
+
+#Initializes the seed for the random numbers
+np.random.seed(100)
 
 #KMeans Exercise
 nPoints=800
