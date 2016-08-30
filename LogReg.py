@@ -26,11 +26,11 @@ from sklearn import metrics
 test_pred = regr.predict(boston_X_test)
 print(metrics.accuracy_score(pricy_test,test_pred))
 #Create confusion matrix for the model
-print(metrics.confusion_matrix(test_pred,pricy_test))
+print(metrics.confusion_matrix(pricy_test,test_pred))
 #Assess precision, recall, and F-measure for the model
-print(metrics.precision_score(test_pred,pricy_test))
-print(metrics.recall_score(test_pred,pricy_test))
-print(metrics.f1_score(test_pred,pricy_test))
+print(metrics.precision_score(pricy_test,test_pred))
+print(metrics.recall_score(pricy_test,test_pred))
+print(metrics.f1_score(pricy_test,test_pred))
 
 #Get the probabilities, calculate an AUC value, and graph an ROC curve
 test_prob_yes = regr.predict_proba(boston_X_test)[:,1]
