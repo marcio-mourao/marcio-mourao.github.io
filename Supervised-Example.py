@@ -17,22 +17,22 @@ X = iris.data
 y = iris.target
 n_neighbors=30
 model = KNeighborsClassifier(n_neighbors, weights='uniform')
-model.fit(X, y)
-predictions=model.predict(X)
-print("Number of mislabeled points out of a total %d points : %d" %(X.shape[0],(y != predictions).sum()))
+model.fit(X[0:139], y[0:139])
+predictions=model.predict(X[140:150])
+print("Number of mislabeled points out of a total %d points : %d" %(len(X[140:150]),(y[140:150] != predictions).sum()))
 
 #Naive Bayes Classifier
 X = iris.data
 y = iris.target
 model = GaussianNB()
-model.fit(X,y)
-predictions=model.predict(X)
-print("Number of mislabeled points out of a total %d points : %d" %(X.shape[0],(y != predictions).sum()))
+model.fit(X[0:139], y[0:139])
+predictions=model.predict(X[140:150])
+print("Number of mislabeled points out of a total %d points : %d" %(len(X[140:150]),(y[140:150] != predictions).sum()))
 
 #Decision Tree Classifier
 X = iris.data
 y = iris.target
 model = DecisionTreeClassifier()
-model.fit(X,y)
-predictions=model.predict(X)
-print("Number of mislabeled points out of a total %d points : %d" %(X.shape[0],(y != predictions).sum()))
+model.fit(X[0:139], y[0:139])
+predictions=model.predict(X[140:150])
+print("Number of mislabeled points out of a total %d points : %d" %(len(X[140:150]),(y[140:150] != predictions).sum()))

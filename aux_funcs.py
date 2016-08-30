@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
+#Just displays the Iris dataset in a tridimensional setting
 def display_Iris(X,fignum,labels):
     fig = plt.figure(fignum, figsize=(4, 3))
     ax = Axes3D(fig, rect=[0, 0, .95, 1], elev=48, azim=134)
@@ -23,6 +24,7 @@ def display_Iris(X,fignum,labels):
                                       horizontalalignment='center',
                                       bbox=dict(alpha=.5, edgecolor='w', facecolor='w'))
 
+#Defines clusters based on the Guassian distribution
 def init_board_gauss(N, k, s2):
     n = float(N)/k
     X = []
