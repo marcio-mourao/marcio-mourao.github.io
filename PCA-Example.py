@@ -27,7 +27,9 @@ print('\nMean for each attribute: \n', np.mean(X_std,axis=0))
 # Obtain the covariance matrix
 cov_mat = np.cov(X_std.T)
 print('\nNumPy covariance matrix: \n%s' %cov_mat)
+
 # Check scatter of some combinations
+plt.figure()
 plt.scatter(X_std[:,0],X_std[:,3])
 
 # Obtain eigenvalues and eigenvectors of the covariance matrix
