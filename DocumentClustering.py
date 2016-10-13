@@ -2,6 +2,37 @@
 #http://scikit-learn.org/stable/auto_examples/text/document_clustering.html
 #sphx-glr-auto-examples-text-document-clustering-py
 
+#Calculates the pairwise precision between arrays x and y
+def precision(pred,true):
+    tp = 0
+    fp = 0
+    for i in range(len(pred)):
+        for j in range(len(pred)):
+            if (pred[i]==pred[j] and i!=j):
+                if (true[i]==true[j]):
+                    tp += 1
+                else:
+                    fp += 1
+    return(float(tp)/float(tp+fp))
+    
+#Calculates the pairwise recall between arrays x and y
+def recall(pred,true):
+    tp = 0
+    fn = 0
+    for i in range(len(true)):
+        for j in range(len(true)):
+            if (true[i]==true[j] and i!=j):
+                if (pred[i]==pred[j]):
+                    tp += 1
+                else:
+                    fn += 1
+    return(float(tp)/float(tp+fn))
+    
+#Calculates the Fowlkes-Mallows score between arrays x and y. There 
+#appears to be a bug in the metrics Fowlkes-Mallows score function.
+def fowlkes_mallows(pred,true):
+    return((recall(pred,true)*precision(pred,true))**0.5)
+
 from sklearn.datasets import fetch_20newsgroups
 import numpy as np
 from sklearn.cluster import KMeans
@@ -20,10 +51,13 @@ vectorizer = TfidfVectorizer(max_df = 0.5, max_features=1000, min_df=2,
 X = vectorizer.fit_transform(dataset.data)
 
 #Perform Kmeans clustering for differing numbers of clusters and calculate the
-#silhouette statistic, V measure, and inertia
-silhouettes = []
-V = []
-inertias = []
+#silhouette statistic, V-measure, Fowlkes-Mallows score, inertia, and 
+#Calinski-Harabaz score
+silhouettes = [] #Silhouette score
+V = [] #V-measure
+FM = [] #Fowlkes-Mallows score
+inertias = [] #inertia
+CH = [] #Calinski-Harabaz score
 cluster_sizes = range(2,11) #Sizes ranging from 2 to 10
 for cluster_size in cluster_sizes:
     km=KMeans(n_clusters = cluster_size, init='k-means++', max_iter=100,
@@ -31,25 +65,31 @@ for cluster_size in cluster_sizes:
     km.fit(X)
     silhouettes.append(metrics.silhouette_score(X,km.labels_))
     V.append(metrics.v_measure_score(labels,km.labels_))
+    FM.append(fowlkes_mallows(labels,km.labels_))
+    CH.append(metrics.calinski_harabaz_score(X.toarray(),km.labels_))
     inertias.append(km.inertia_)
 print(silhouettes)
 print(V)
+print(FM)
 print(inertias)
-
-#Plot the scores
+print(CH)
+#Plot the V-measure, silhouette score, and Fowlkes-Mallows score
 import matplotlib.pyplot as plt
 plt.scatter(cluster_sizes,V)
 #Connects the points in the ROC plot with lines
 plt.plot(cluster_sizes,V)
 #Adds diagonal line
+plt.scatter(cluster_sizes,FM)
+plt.plot(cluster_sizes,FM)
 plt.scatter(cluster_sizes,silhouettes)
 plt.plot(cluster_sizes,silhouettes)
 #Sets up the axis labels
 plt.xlabel('Cluster size')
 plt.ylabel('Score')
 plt.ylim(0,1.01)
-plt.text(6,0.2,"Silhouette score",color="green")
-plt.text(6,0.6,"V-measure",color="blue")
+plt.text(6,0.1,"Silhouette score",color="red")
+plt.text(6,0.7,"Fowlkes-Mallows score", color="green")
+plt.text(6,0.4,"V-measure",color="blue")
 #Displays the plot
 plt.show()
 
