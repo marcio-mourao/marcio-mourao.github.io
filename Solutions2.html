@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="generator" content="MATLAB R2016a"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><title>Untitled</title><style type="text/css">
+* {margin: 0; padding: 0;}
+body {text-align: start; line-height: 17.234001159668px; min-height: 0px; white-space: normal; color: rgb(0, 0, 0); font-family: Consolas, Inconsolata, Menlo, monospace; font-style: normal; font-size: 14px; font-weight: normal; text-decoration: none; white-space: normal; }
+h1, h2 {font-weight: normal;}
+.content { padding: 30px; }
+
+.S0 { margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S1 { line-height: 20.576000213623px; min-height: 20px; white-space: pre-wrap; color: rgb(60, 60, 60); font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; white-space: pre-wrap; margin-left: 4px; margin-top: 3px; margin-bottom: 9px; margin-right: 10px;  }
+.S2 { min-height: 0px; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S3 { line-height: 20.576000213623px; min-height: 20px; white-space: pre-wrap; color: rgb(60, 60, 60); font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; white-space: pre-wrap; margin-left: 4px; margin-top: 15px; margin-bottom: 9px; margin-right: 10px;  }
+.S4 { line-height: 21px; min-height: 17px; white-space: pre-wrap; font-family: Helvetica, Arial, sans-serif; white-space: pre-wrap; margin-left: 4px; margin-top: 2px; margin-bottom: 9px; margin-right: 10px;  }
+.S5 { min-height: 0px; font-weight: bold; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S6 { min-height: 0px; font-family: monospace; font-weight: bold; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+
+.LineNodeBlock {margin: 10px 0 10px 0;}
+.LineNodeBlock+.paragraphNode {margin-top: 10px;}
+.lineNode {padding-left: 10px; background-color: #F7F7F7; border-left: 1px solid #E9E9E9; border-right: 1px solid #E9E9E9;}
+.inlineWrapper:first-child .lineNode,.inlineWrapper.outputs+.inlineWrapper .lineNode {padding-top: 5px; border-top: 1px solid #E9E9E9;}
+.inlineWrapper:last-child .lineNode,.inlineWrapper.outputs .lineNode {padding-bottom: 5px; border-bottom: 1px solid #E9E9E9;}
+.lineNode .textBox {white-space: pre;}
+</style></head><body><div class = "content"><div class = 'SectionBlock containment active'><h2 class = "S1"><span class = "S2"></span></h2><h2 class = "S3"><span class = "S2">Exercise #1</span></h2><p class = "S4"><span class = "S2"></span></p><p class = "S4"><span class = "S5">A='Hello'</span></p><p class = "S4"><span class = "S5">C=[]</span></p><p class = "S4"><span class = "S5">C{end+1}='hello'</span></p><p class = "S4"><span class = "S5">C{end+1}='goodbye'</span></p><p class = "S4"><span class = "S5">C{end+1}='hello'</span></p><p class = "S4"><span class = "S5">C{end+1}='hello goodbye'</span></p><p class = "S4"><span class = "S5">C{end+1}='goodbye'</span></p><p class = "S4"><span class = "S5">C{end+1}='hello'</span></p><p class = "S4"><span class = "S5">C{end+1}='goodhellow'</span></p><p class = "S4"><span class = "S5">sum(strcmp('hello',C))</span></p><p class = "S4"><span class = "S5">ind=strfind(C,'hello')</span></p><p class = "S4"><span class = "S5">length(cell2mat(ind))</span></p><p class = "S4"><span class = "S2"></span></p><p class = "S4"><span class = "S5">function fieldValue = extractValue(st,fieldName)</span></p><p class = "S4"><span class = "S5">% Extracts value from structure with name fielName</span></p><p class = "S4"><span class = "S5">    fieldValue=st.(fieldName);</span></p><p class = "S4"><span class = "S5">end</span></p><p class = "S4"><span class = "S2"></span></p></div><p class = "S0"></p><div class = 'SectionBlock containment'><h2 class = "S1"><span class = "S2"></span></h2><h2 class = "S3"><span class = "S2">Exercise #2</span></h2><p class = "S4"><span class = "S5"></span></p><p class = "S4"><span class = "S5">A=T(strcmp(T.Gender,'Male') &amp; T.Smoker==true,:)</span></p><p class = "S4"><span class = "S5">A(A.Height&gt;70,:)</span></p><p class = "S4"><span class = "S2"></span></p></div><p class = "S0"></p><div class = 'SectionBlock containment'><h2 class = "S1"><span class = "S2"></span></h2><h2 class = "S3"><span class = "S2">Exercise #3</span></h2><h2 class = "S3"><span class = "S2"></span></h2><p class = "S4"><span class = "S5">T3.F=strcmp(T3.C,'yes')</span></p><p class = "S4"><span class = "S5">sum(T3.F)</span></p><p class = "S4"><span class = "S5"></span></p></div><p class = "S0"></p><div class = 'SectionBlock containment'><p class = "S4"><span class = "S2"></span></p><h2 class = "S3"><span class = "S2">Exercise #4</span></h2><p class = "S4"><span class = "S2"></span></p><p class = "S4"><span class = "S5">4.1    </span><span class = "S6">n = 7   gives m = 8</span></p><p class = "S4"><span class = "S6">    n = 9   gives m = -1</span></p><p class = "S4"><span class = "S6">    n = -10 gives m = -11</span></p><p class = "S4"><span class = "S6"></span></p><p class = "S4"><span class = "S6">    z = 1   gives w = 2</span></p><p class = "S4"><span class = "S6">    z = 9   gives w = 0</span></p><p class = "S4"><span class = "S6">    z = 60  gives w = sqrt(60)</span></p><p class = "S4"><span class = "S6">    z = 200 gives w = 200</span></p><p class = "S4"><span class = "S2"></span></p><p class = "S4"><span class = "S5">4.2   function test(num) </span></p><p class = "S4"><span class = "S5">            if (rem(num,2)==0)</span></p><p class = "S4"><span class = "S5">                display('I am a prime!')</span></p><p class = "S4"><span class = "S5">            else</span></p><p class = "S4"><span class = "S5">                display('I am not a prime')</span></p><p class = "S4"><span class = "S5">            end</span></p><p class = "S4"><span class = "S5">        end</span></p><p class = "S4"><span class = "S5"></span></p><p class = "S4"><span class = "S5">4.3    function out = test(T)</span></p><p class = "S4"><span class = "S5">                if (T  &gt; 0) &amp;&amp; (T &lt;100)</span></p><p class = "S4"><span class = "S5">                       out=T-10;</span></p><p class = "S4"><span class = "S5">                elseif (T &gt; 100)</span></p><p class = "S4"><span class = "S5">                        out=0.45*T+900;</span></p><p class = "S4"><span class = "S5">                end</span></p><p class = "S4"><span class = "S5">        end</span></p><p class = "S4"><span class = "S5">                    </span></p></div><p class = "S0"></p><div class = 'SectionBlock containment'><h2 class = "S1"><span class = "S2"></span></h2><h2 class = "S3"><span class = "S2">Exercise #5</span></h2><p class = "S4"><span class = "S5"></span></p><p class = "S4"><span class = "S5">5.1     </span><span class = "S6">a. total = 0;</span></p><p class = "S4"><span class = "S6">        for j = 1:length(x)</span></p><p class = "S4"><span class = "S6">           total = total + x(j);</span></p><p class = "S4"><span class = "S6">        end</span></p><p class = "S4"><span class = "S6">     b. runningTotal = zeros(size(x));</span></p><p class = "S4"><span class = "S6">        runningTotal(1) = x(1);</span></p><p class = "S4"><span class = "S6">        for j = 2:length(x)</span></p><p class = "S4"><span class = "S6">           runningTotal(j) = runningTotal(j-1) + x(j);</span></p><p class = "S4"><span class = "S6">        end</span></p><p class = "S4"><span class = "S6">     c. s = zeros(size(x));</span></p><p class = "S4"><span class = "S6">        for j = 1:length(x)</span></p><p class = "S4"><span class = "S6">           s(j) = sin(x(j));</span></p><p class = "S4"><span class = "S6">        end</span></p><p class = "S4"><span class = "S5"></span></p><p class = "S4"><span class = "S5">5.2        </span><span class = "S6">A = rand(4,7);</span></p><p class = "S4"><span class = "S6">      [M,N] = size(A);</span></p><p class = "S4"><span class = "S6">      for j = 1:M</span></p><p class = "S4"><span class = "S6">         for k = 1:N</span></p><p class = "S4"><span class = "S6">            if A(j,k) &lt; 0.2</span></p><p class = "S4"><span class = "S6">               A(j,k) = 0;</span></p><p class = "S4"><span class = "S6">            else</span></p><p class = "S4"><span class = "S6">               A(j,k) = 1;</span></p><p class = "S4"><span class = "S6">            end</span></p><p class = "S4"><span class = "S6">         end</span></p><p class = "S4"><span class = "S6">      end</span></p><p class = "S4"><span class = "S6"></span></p></div><p class = "S0"></p><div class = 'SectionBlock containment'><p class = "S4"><span class = "S5"></span></p><h2 class = "S3"><span class = "S2">Exercise #6</span></h2><p class = "S4"><span class = "S5"></span></p><p class = "S4"><span class = "S5">6.1    A=magic(5); </span></p><p class = "S4"><span class = "S5">         B=magic(10);</span></p><p class = "S4"><span class = "S5">        save('magic5.mat','A')</span></p><p class = "S4"><span class = "S5">        save('magic10.mat','B')</span></p><p class = "S4"><span class = "S5">        clear A B</span></p><p class = "S4"><span class = "S5">        load('magic5')</span></p><p class = "S4"><span class = "S5">        load('magic10')</span></p><p class = "S4"><span class = "S5">        who</span></p><p class = "S4"><span class = "S5">        A</span></p><p class = "S4"><span class = "S5">        B</span></p><p class = "S4"><span class = "S5">        xlswrite('magic.xls',A,'magic5','C2')</span></p><p class = "S4"><span class = "S5">        xlswrite('magic.xls',B,'magic10','B3')</span></p><p class = "S4"><span class = "S5">        [status,sheets]=xlsfinfo('magic.xls')</span></p><p class = "S4"><span class = "S5">        clear A B</span></p><p class = "S4"><span class = "S5">        A=xlsread('magic.xls','magic5','C2')</span></p><p class = "S4"><span class = "S5">        B=xlsread('magic.xls','magic10','B3')</span></p><p class = "S4"><span class = "S5"></span></p></div></div>
+<!-- 
+##### SOURCE BEGIN #####
+%% **
+%% *Exercise #1*
+% 
+% 
+% *A='Hello'*
+% 
+% *C=[]*
+% 
+% *C{end+1}='hello'*
+% 
+% *C{end+1}='goodbye'*
+% 
+% *C{end+1}='hello'*
+% 
+% *C{end+1}='hello goodbye'*
+% 
+% *C{end+1}='goodbye'*
+% 
+% *C{end+1}='hello'*
+% 
+% *C{end+1}='goodhellow'*
+% 
+% *sum(strcmp('hello',C))*
+% 
+% *ind=strfind(C,'hello')*
+% 
+% *length(cell2mat(ind))*
+% 
+% 
+% 
+% *function fieldValue = extractValue(st,fieldName)*
+% 
+% *% Extracts value from structure with name fielName*
+% 
+% *    fieldValue=st.(fieldName);*
+% 
+% *end*
+% 
+% 
+%% **
+%% *Exercise #2*
+% **
+% 
+% *A=T(strcmp(T.Gender,'Male') & T.Smoker==true,:)*
+% 
+% *A(A.Height>70,:)*
+% 
+% 
+%% **
+%% *Exercise #3*
+%% **
+% *T3.F=strcmp(T3.C,'yes')*
+% 
+% *sum(T3.F)*
+% 
+% **
+% 
+% 
+%% *Exercise #4*
+% 
+% 
+% *4.1    |n = 7   gives m = 8*|
+% 
+% |*    n = 9   gives m = -1*|
+% 
+% |*    n = -10 gives m = -11*|
+% 
+% |**|
+% 
+% |*    z = 1   gives w = 2*|
+% 
+% |*    z = 9   gives w = 0*|
+% 
+% |*    z = 60  gives w = sqrt(60)*|
+% 
+% |*    z = 200 gives w = 200*|
+% 
+% 
+% 
+% *4.2   function test(num) *
+% 
+% *            if (rem(num,2)==0)*
+% 
+% *                display('I am a prime!')*
+% 
+% *            else*
+% 
+% *                display('I am not a prime')*
+% 
+% *            end*
+% 
+% *        end*
+% 
+% **
+% 
+% *4.3    function out = test(T)*
+% 
+% *                if (T  > 0) && (T <100)*
+% 
+% *                       out=T-10;*
+% 
+% *                elseif (T > 100)*
+% 
+% *                        out=0.45*T+900;*
+% 
+% *                end*
+% 
+% *        end*
+% 
+% *                    *
+%% **
+%% *Exercise #5*
+% **
+% 
+% *5.1     |a. total = 0;*|
+% 
+% |*        for j = 1:length(x)*|
+% 
+% |*           total = total + x(j);*|
+% 
+% |*        end*|
+% 
+% |*     b. runningTotal = zeros(size(x));*|
+% 
+% |*        runningTotal(1) = x(1);*|
+% 
+% |*        for j = 2:length(x)*|
+% 
+% |*           runningTotal(j) = runningTotal(j-1) + x(j);*|
+% 
+% |*        end*|
+% 
+% |*     c. s = zeros(size(x));*|
+% 
+% |*        for j = 1:length(x)*|
+% 
+% |*           s(j) = sin(x(j));*|
+% 
+% |*        end*|
+% 
+% **
+% 
+% *5.2        |A = rand(4,7);*|
+% 
+% |*      [M,N] = size(A);*|
+% 
+% |*      for j = 1:M*|
+% 
+% |*         for k = 1:N*|
+% 
+% |*            if A(j,k) < 0.2*|
+% 
+% |*               A(j,k) = 0;*|
+% 
+% |*            else*|
+% 
+% |*               A(j,k) = 1;*|
+% 
+% |*            end*|
+% 
+% |*         end*|
+% 
+% |*      end*|
+% 
+% |**|
+% 
+% **
+%% *Exercise #6*
+% **
+% 
+% *6.1    A=magic(5); *
+% 
+% *         B=magic(10);*
+% 
+% *        save('magic5.mat','A')*
+% 
+% *        save('magic10.mat','B')*
+% 
+% *        clear A B*
+% 
+% *        load('magic5')*
+% 
+% *        load('magic10')*
+% 
+% *        who*
+% 
+% *        A*
+% 
+% *        B*
+% 
+% *        xlswrite('magic.xls',A,'magic5','C2')*
+% 
+% *        xlswrite('magic.xls',B,'magic10','B3')*
+% 
+% *        [status,sheets]=xlsfinfo('magic.xls')*
+% 
+% *        clear A B*
+% 
+% *        A=xlsread('magic.xls','magic5','C2')*
+% 
+% *        B=xlsread('magic.xls','magic10','B3')*
+% 
+% **
+##### SOURCE END #####
+--></body></html>
