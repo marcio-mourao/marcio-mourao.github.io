@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="generator" content="MATLAB R2016a"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><title>MATLAB</title><style type="text/css">
+* {margin: 0; padding: 0;}
+body {text-align: start; line-height: 17.234001159668px; min-height: 0px; white-space: normal; color: rgb(0, 0, 0); font-family: Consolas, Inconsolata, Menlo, monospace; font-style: normal; font-size: 14px; font-weight: normal; text-decoration: none; white-space: normal; }
+h1, h2 {font-weight: normal;}
+.content { padding: 30px; }
+
+.S0 { margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S1 { line-height: 26.4000015258789px; min-height: 24px; white-space: pre-wrap; color: rgb(213, 80, 0); font-family: Helvetica, Arial, sans-serif; font-size: 22px; white-space: pre-wrap; margin-left: 4px; margin-top: 3px; margin-bottom: 15px; margin-right: 10px;  }
+.S2 { min-height: 0px; font-weight: bold; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S3 { line-height: 21px; min-height: 17px; white-space: pre-wrap; font-family: Helvetica, Arial, sans-serif; white-space: pre-wrap; margin-left: 4px; margin-top: 2px; margin-bottom: 9px; margin-right: 10px;  }
+.S4 { min-height: 0px; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S5 { line-height: 20.576000213623px; min-height: 20px; white-space: pre-wrap; color: rgb(60, 60, 60); font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; white-space: pre-wrap; margin-left: 4px; margin-top: 15px; margin-bottom: 9px; margin-right: 10px;  }
+.S6 { font-family: Helvetica, Arial, sans-serif; margin-left: 0px; margin-top: 10px; margin-bottom: 20px; margin-right: 0px;  }
+.S7 { text-align: left; line-height: 21px; white-space: pre-wrap; white-space: pre-wrap; margin-left: 56px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S8 { font-weight: bold; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S9 { line-height: 26.4000015258789px; min-height: 24px; white-space: pre-wrap; color: rgb(213, 80, 0); font-family: Helvetica, Arial, sans-serif; font-size: 22px; white-space: pre-wrap; margin-left: 4px; margin-top: 10px; margin-bottom: 15px; margin-right: 10px;  }
+.S10 { min-height: 0px; color: rgb(0, 95, 206); margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S11 { margin-left: 3px; margin-top: 4px; margin-bottom: 4px; margin-right: 3px;  }
+.S12 { line-height: 15.5926675796509px; min-height: 18px; white-space: nowrap; font-size: 12.6666669845581px; white-space: nowrap; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S13 { line-height: 15.5926685333252px; min-height: 0px; white-space: pre; font-size: 12.6666679382324px; white-space: pre; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S14 { line-height: 15.5926685333252px; min-height: 0px; white-space: pre; color: rgb(34, 139, 34); font-size: 12.6666679382324px; white-space: pre; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 45px;  }
+.S15 { line-height: 15.5926685333252px; min-height: 0px; white-space: pre; color: rgb(160, 32, 240); font-size: 12.6666679382324px; white-space: pre; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S16 { line-height: 15.5926685333252px; min-height: 0px; white-space: pre; font-size: 12.6666679382324px; white-space: pre; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 45px;  }
+.S17 { margin-left: 3px; margin-top: 4px; margin-bottom: 10px; margin-right: 3px;  }
+.S18 { line-height: 20.576000213623px; min-height: 20px; white-space: pre-wrap; color: rgb(60, 60, 60); font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; white-space: pre-wrap; margin-left: 4px; margin-top: 3px; margin-bottom: 9px; margin-right: 10px;  }
+.S19 { margin-left: 3px; margin-top: 10px; margin-bottom: 4px; margin-right: 3px;  }
+.S20 { line-height: 21px; min-height: 17px; white-space: pre-wrap; font-family: Helvetica, Arial, sans-serif; white-space: pre-wrap; margin-left: 4px; margin-top: 10px; margin-bottom: 9px; margin-right: 10px;  }
+
+.LineNodeBlock {margin: 10px 0 10px 0;}
+.LineNodeBlock+.paragraphNode {margin-top: 10px;}
+.lineNode {padding-left: 10px; background-color: #F7F7F7; border-left: 1px solid #E9E9E9; border-right: 1px solid #E9E9E9;}
+.inlineWrapper:first-child .lineNode,.inlineWrapper.outputs+.inlineWrapper .lineNode {padding-top: 5px; border-top: 1px solid #E9E9E9;}
+.inlineWrapper:last-child .lineNode,.inlineWrapper.outputs .lineNode {padding-bottom: 5px; border-bottom: 1px solid #E9E9E9;}
+.lineNode .textBox {white-space: pre;}
+</style></head><body><div class = "content"><div class = 'SectionBlock containment'><h1 class = "S1"><span class = "S2">MATLAB</span></h1><p class = "S3"><span class = "S4"></span></p><h2 class = "S5"><span class = "S4">MATLAB (MATrix LABoratory) is a high-level programming language and interactive environment for algorithm development, data visualization, data analysis, and numeric computation. Core strengths of the system include rapid development, powerful built-in functionality and extensive application-specific functionality provided by both official toolboxes and user-contributed code.</span></h2><h2 class = "S5"><span class = "S4"></span></h2><h2 class = "S5"><span class = "S4">MATLAB contains several different parts:</span></h2><h2 class = "S5"><span class = "S4"></span></h2><ul class = "S6"><li class = "S7"><span class = "S8">Desktop Tools and Development Environment</span><span class = "S0"> </span><span class = "S8">-</span><span class = "S0"> This part of MATLAB is the set of tools and facilities that help you use and become more productive with MATLAB functions and files. Many of these tools are graphical user interfaces. It includes: the MATLAB desktop and Command Window, an editor and debugger, a code analyzer, and browsers for viewing help, the Workspace, and folders.</span></li></ul><ul class = "S6"><li class = "S7"><span class = "S8">Mathematical Function Library -</span><span class = "S0"> This library is a vast collection of computational algorithms ranging from elementary functions, like sum, sine, cosine, and complex arithmetic, to more sophisticated functions like matrix inverse, matrix eigenvalues, and fast Fourier transforms.</span></li></ul><ul class = "S6"><li class = "S7"><span class = "S8">The Language -</span><span class = "S0"> The MATLAB language is a high-level matrix/array language with control flow statements, functions, data structures, input/output, and object-oriented programming features. It allows both "programming in the small" to rapidly create quick programs you do not intend to reuse. You can also do "programming in the large" to create complex application programs intended for reuse.</span></li></ul><ul class = "S6"><li class = "S7"><span class = "S8">Graphics -</span><span class = "S0"> MATLAB has extensive facilities for displaying vectors and matrices as graphs, as well as annotating and printing these graphs. It includes high-level functions for two-dimensional and three-dimensional data visualization, image processing, animation, and presentation graphics. It also includes low-level functions that allow you to fully customize the appearance of graphics as well as to build complete graphical user interfaces on your MATLAB applications.</span></li></ul><ul class = "S6"><li class = "S7"><span class = "S8">External Interfaces -</span><span class = "S0"> The external interfaces library allows you to write C and Fortran programs that interact with MATLAB. It includes facilities for calling routines from MATLAB (dynamic linking), for calling MATLAB as a computational engine, and for reading and writing MAT-files.</span></li></ul></div><p class = "S0"></p><div class = 'SectionBlock containment'><h1 class = "S1"><span class = "S2"></span></h1><h1 class = "S9"><span class = "S2">References</span></h1><p class = "S3"><span class = "S2"></span></p><h2 class = "S5"><span class = "S4">A MATLAB Tutorial -  </span><a href = 'https://people.math.osu.edu/overman.2/matlab.pdf'><span class = "S0">https://people.math.osu.edu/overman.2/matlab.pdf</span></a></h2><h2 class = "S5"><span class = "S4">        Ed Overman, Department of Mathematics, The Ohio State University</span></h2><h2 class = "S5"><span class = "S4"></span></h2><h2 class = "S5"><span class = "S4">Introduction to MATLAB for engineering students - </span><a href = 'http://www.mccormick.northwestern.edu/docs/efirst/matlab.pdf'><span class = "S0">http://www.mccormick.northwestern.edu/docs/efirst/matlab.pdf</span></a></h2><h2 class = "S5"><span class = "S4">       David Houcque, Northwestern University</span></h2><h2 class = "S5"><span class = "S4"></span></h2><h2 class = "S5"><span class = "S4">An Introduction to  Statistical Learning (Advertising data) - </span><a href = 'http://www-bcf.usc.edu/~gareth/ISL'><span class = "S0">http://www-bcf.usc.edu/~gareth/ISL</span></a></h2><h2 class = "S5"><span class = "S4">       Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani   </span></h2></div><p class = "S0"></p><div class = 'SectionBlock containment active'><h1 class = "S1"><span class = "S2"></span></h1><h1 class = "S9"><span class = "S2">Summary</span></h1><h2 class = "S5"><span class = "S4"></span></h2><h2 class = "S5"><span class = "S4">We are going to use two distinct datasets (Advertising and Patients) to:</span></h2><p class = "S3"><span class = "S4"></span></p><ul class = "S6"><li class = "S7"><span class = "S8">Read and write data to files</span></li></ul><ul class = "S6"><li class = "S7"><span class = "S8">Analyze and manipulate data</span></li></ul><ul class = "S6"><li class = "S7"><span class = "S8">Display graphically data</span></li></ul><ul class = "S6"><li class = "S7"><span class = "S8">Fit linear regression and predict new outcomes</span></li></ul></div><p class = "S0"></p><div class = 'SectionBlock containment'><h1 class = "S1"><span class = "S2"></span></h1><h1 class = "S9"><span class = "S2">Advertising data</span></h1><h2 class = "S5"><span class = "S4"></span></h2><h2 class = "S5"><span class = "S4">The advertising data set consists of the sales of that product in 200 different markets, along with advertising budgets for the product in each of those markets for three different media: TV, radio, and newspaper. Sales is represented in thousands of units, as a function of TV, radio, and newspaper budgets, represented in thousands of dollars.</span></h2><p class = "S3"><span class = "S2"></span></p><h1 class = "S9"><span class = "S4">Load the dataset and look at the characteristics of the data</span></h1></div><p class = "S0"></p><div class = 'SectionBlock containment'><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">clear </span><span class = "S14">% removes variables from the workspace</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">[type, sheets] = xlsfinfo(</span><span class = "S15">'Advertising.xls'</span><span class = "S13">); </span><span class = "S14">% collects information about the excel file</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">type</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">sheets</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">who </span><span class = "S14">% displays existing variables</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">whos </span><span class = "S14">% displays existing variables with detailed info</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16"></span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">[num,txt] = xlsread(</span><span class = "S15">'Advertising.xls'</span><span class = "S13">); </span><span class = "S14">%  reads excel file</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">num</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">txt</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">size(num) </span><span class = "S14">% obtains size of numerical data obtained from the file</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">size(txt) </span><span class = "S14">% obtains size of text data obtained from the file</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16"></span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data0 = importdata(</span><span class = "S15">'Advertising.xls'</span><span class = "S13">); </span><span class = "S14">% imports data from the file</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">data0</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16"></span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">class(data0) </span><span class = "S14">% obtains the class of the variable data0</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data0.data </span><span class = "S14">% displays the data field of structure data0</span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data1 = readtable(</span><span class = "S15">'Advertising.xls'</span><span class = "S13">); </span><span class = "S14">% reads data from the file into a table</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">data1</span></p></div></div><h2 class = "S5"><span class = "S4"></span></h2><h2 class = "S5"><span class = "S4">"table" is a data type for collecting heterogeneous data and metadata properties such as variable names, row names, descriptions, and variable units, in a single container. Each variable in a table can have a different data type, but must have the same number of rows.</span></h2></div><p class = "S0"></p><div class = 'SectionBlock containment'><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">summary(data1) </span><span class = "S14">% displays a summary of the table</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16"></span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">[sizeX,sizeY] = size(data1) </span><span class = "S14">% obtains size of the table</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data1(1:5,:) </span><span class = "S14">% displays the first five lines of the table</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data1(1:5,{</span><span class = "S15">'TV'</span><span class = "S13">,</span><span class = "S15">'Radio'</span><span class = "S13">}) </span><span class = "S14">% displays the first five lines of specific columns in the data</span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">aux1 = data1(:,</span><span class = "S15">'TV'</span><span class = "S13">) </span><span class = "S14">% assigns to variable aux1 a slice of the table containing the column 'TV'</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">class(aux1) </span><span class = "S14">% obtains the class of the variable</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16"></span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">aux2 = data1.TV </span><span class = "S14">% assigns to aux2 values on the table under column 'TV'</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">class(aux2) </span><span class = "S14">% obtains the class of the variable</span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><h2 class = "S18"><span class = "S4"></span></h2><h2 class = "S5"><span class = "S4">data1 is not even close to real data you would get most of the times, so lets introduce a number of 'other' characters in our data columns in random locations. Then we will save this data into a file and load it again.</span></h2><p class = "S3"><span class = "S2"></span></p><h1 class = "S9"><span class = "S4">Make a number of small modifications in the data and save it into a file</span></h1><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data2 = data1; </span><span class = "S14">% data2 is assigned the same table data1 is assigned to</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data2.TV(1:3)=</span><span class = "S15">' '</span><span class = "S13">; </span><span class = "S14">% assigns the first three values of variable 'TV' to ''</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data2.TV(4:6)=</span><span class = "S15">'.'</span><span class = "S13">; </span><span class = "S14">% assigns the second three values of variable 'TV' to '.'</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16"></span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">summary(data2)</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16"></span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data2.TV(1:10) </span><span class = "S14">% displays the first 10 values of TV variable (column) on table data2</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16"></span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data2.TV=char(data2.TV) </span><span class = "S14">% converts TV values to characters</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">summary(data2)</span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data2 = data1; </span><span class = "S14">% let reset the data</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data2.TV=categorical(data2.TV); </span><span class = "S14">% converts 'TV' to categorical</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data2.Radio=categorical(data2.Radio); </span><span class = "S14">% converts 'Radio' to categorical</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data2.Newspaper=categorical(data2.Newspaper); </span><span class = "S14">% converts 'TV' to categorical</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data2.Sales=categorical(data2.Sales); </span><span class = "S14">% converts 'Sales' to categorical</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16"></span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data2.TV(randi(sizeX,3,1))= </span><span class = "S15">'.'</span><span class = "S13">; </span><span class = "S14">% assigns the character '.' to three random positions on the 'TV' column</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data2.Radio(randi(sizeX,3,1))= </span><span class = "S15">' '</span><span class = "S13">; </span><span class = "S14">% assigns the character ' ' to three random positions on the 'Radio' column</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data2.Newspaper(randi(sizeX,3,1))= </span><span class = "S15">'Na'</span><span class = "S13">; </span><span class = "S14">% assigns the characters 'Na' to three random positions on the'Newspaper' column</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data2.Sales(randi(sizeX,3,1))= </span><span class = "S15">'-99'</span><span class = "S13">; </span><span class = "S14">% assigns the numeric literal '-99' to three random positions on the 'Sales' column</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16"></span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data2 </span><span class = "S14">% displays the new data2</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">summary(data2)</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16"></span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">writetable(data2,</span><span class = "S15">'Advertising2.txt'</span><span class = "S13">,</span><span class = "S15">'Delimiter'</span><span class = "S13">,</span><span class = "S15">' '</span><span class = "S13">) </span><span class = "S14">% write table to file 'Advertising2.txt'</span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><p class = "S3"><span class = "S4"></span></p><h1 class = "S9"><span class = "S4">Read again the data with additional specifications and handle missing values</span></h1><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16"></span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data3 = readtable(</span><span class = "S15">'Advertising2.txt'</span><span class = "S13">); </span><span class = "S14">% read table and assigns it to variable data3</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">data3</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">summary(data3)</span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data4 = readtable(</span><span class = "S15">'Advertising2.txt'</span><span class = "S13">,</span><span class = "S15">'TreatAsEmpty'</span><span class = "S13">,{</span><span class = "S15">'.'</span><span class = "S13">,</span><span class = "S15">'Na'</span><span class = "S13">,</span><span class = "S15">'&lt;undefined&gt;'</span><span class = "S13">}) </span><span class = "S14">% reads table with an additional argument specifying NaN ('Not a Number')</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">summary(data4)</span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">TF = ismissing(data4,{NaN -99}); </span><span class = "S14">% indicates which elements of the table contain missing values</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">any(TF,2) </span><span class = "S14">% tests for values different than zero along dimensions </span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data4(any(TF,2),:) </span><span class = "S14">% displays all lines for which there are missing values</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data4 = standardizeMissing(data4,-99) </span><span class = "S14">% considers the numeric literal as NaN</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">summary(data4)</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16"></span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data5 = fillmissing(data4,</span><span class = "S15">'previous'</span><span class = "S13">) </span><span class = "S14">% imputation based on previous value in the table</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data6 = rmmissing(data4) </span><span class = "S14">% remove lines that contain any missing values</span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><h1 class = "S1"><span class = "S4"></span></h1><h1 class = "S9"><span class = "S4">Display the data graphically</span></h1><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">clear</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data1 = readtable(</span><span class = "S15">'Advertising.xls'</span><span class = "S13">,</span><span class = "S15">'ReadRowNames'</span><span class = "S13">,1); </span><span class = "S14">% read data in the provided excel file into table and assigns it to data1</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">summary(data1)</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16"></span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">figure(1); </span><span class = "S14">% creates a figure window</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">hist(data1.Sales); </span><span class = "S14">% displays a histogram of variable Sales</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">figure(2);</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">scatter(data1.TV,data1.Sales) </span><span class = "S14">% creates a scatter of Sales (y axis) as a function of TV (x axis)</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">figure(3);</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">scatter(data1.Radio,data1.Sales) </span><span class = "S14">% creates a scatter of Sales (y axis) as a function of Radio (x axis)</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">figure(4);</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">scatter(data1.Newspaper,data1.Sales) </span><span class = "S14">% creates a scatter of Sales (y axis) as a function of Newspaper (x axis)</span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><p class = "S3"><span class = "S4"></span></p><h1 class = "S9"><span class = "S4">Fit a line</span><span class = "S4">ar regression and display predicted values </span></h1><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">close </span><span class = "S15">all</span><span class = "S16">;</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">modelspec1 = </span><span class = "S15">'Sales ~ TV'</span><span class = "S13">; </span><span class = "S14">% specifies the model for linear regression</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">mdl1 = fitlm(data1,modelspec1); </span><span class = "S14">% fits a linear regression model using the specification 'modelspec1</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">mdl1 </span><span class = "S14">% displays the outcome of the model</span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">figure(2);</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">scatter(data1.TV,data1.Sales,</span><span class = "S15">'b'</span><span class = "S13">); </span><span class = "S14">% creates a scatter of Sales (y axis) as a function of TV advertising (x axis)</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">hold </span><span class = "S15">on</span><span class = "S13">; </span><span class = "S14">% retains current plot when adding new plots</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">plot(data1.TV,mdl1.predict,</span><span class = "S15">'r'</span><span class = "S13">); </span><span class = "S14">% plot predicted values with a red line</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">xlabel(</span><span class = "S15">'TV Advertising'</span><span class = "S13">) </span><span class = "S14">% sets x label</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">ylabel(</span><span class = "S15">'Sales'</span><span class = "S13">) </span><span class = "S14">% sets y label</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">legend(</span><span class = "S15">'Raw Data'</span><span class = "S13">,</span><span class = "S15">'Fit'</span><span class = "S13">); </span><span class = "S14">% sets legend</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">title(</span><span class = "S15">'Example of a linear regression'</span><span class = "S13">) </span><span class = "S14">% sets title</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">set(gca,</span><span class = "S15">'FontWeight'</span><span class = "S13">,</span><span class = "S15">'bold'</span><span class = "S13">,</span><span class = "S15">'FontSize'</span><span class = "S13">,32); </span><span class = "S14">% sets graphics object properties</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">axis([0 300 0 30]) ; </span><span class = "S14">% sets both x and y axis ranges</span></p></div></div><p class = "S20"><span class = "S4"></span></p><h1 class = "S9"><span class = "S4">Fit a multiple linear regression</span></h1><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16"></span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">modelspec2 = </span><span class = "S15">'Sales ~ TV + Radio + Newspaper'</span><span class = "S13">; </span><span class = "S14">% specifies the model for linear regression</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">mdl2 = fitlm(data1,modelspec2); </span><span class = "S14">% fits a linear regression model using the specification 'modelspec2</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">mdl2 </span><span class = "S14">% displays the outcome of the model</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16"></span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16"></span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><h1 class = "S1"><span class = "S2"></span></h1><h1 class = "S9"><span class = "S2">Patients data</span></h1><p class = "S3"><span class = "S2"></span></p><h2 class = "S5"><span class = "S4">The patient's data contains information on 100 hospital patients. This information includes patient's age, gender, weight, height as well as smoking status and measured pressures (systolic and diastolic). This dataset already exists in MATLAB.</span></h2><p class = "S3"><span class = "S2"></span></p><h1 class = "S9"><span class = "S4">Load the dataset and look at the characteristics of the data</span></h1><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16"></span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">clear</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">who</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">load </span><span class = "S15">patients </span><span class = "S14">% loads several variables into Matlab's workspace</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">whos</span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data1 = table(Gender,Age,Smoker,Height,Weight,Systolic); </span><span class = "S14">% creates a table from the specified variables and assigns it to data1</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">[X,Y]=size(data1); </span><span class = "S14">% obtains the size of the table</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data1(1:5,:) </span><span class = "S14">% displays the first 5 lines of the data</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">summary(data1) </span><span class = "S14">% displays a summary of the data</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data1.Gender=categorical(data1.Gender) </span><span class = "S14">% converts gender from a cell array of characters to a categorical variable</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">summary(data1)</span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data1.Properties.RowNames = LastName; </span><span class = "S14">% assigns a label index to the rows of the table, according to an existing cell array 'LastName'</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">data1(1:5,:)</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data1({</span><span class = "S15">'Smith'</span><span class = "S13">,</span><span class = "S15">'Johnson'</span><span class = "S13">},:) </span><span class = "S14">% displays info on 'Smith' and 'Johnson' (note: all columns of the data are displayed)</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data1(</span><span class = "S15">'Johnson'</span><span class = "S13">,{</span><span class = "S15">'Age'</span><span class = "S13">,</span><span class = "S15">'Weight'</span><span class = "S13">}) </span><span class = "S14">% displays the values of only two variables of one single person</span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><h1 class = "S1"><span class = "S4"></span></h1><h1 class = "S9"><span class = "S4">Creates a new column on the table and obtain subsets according to specificed conditions</span></h1><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data1.BMI = (data1.Weight*0.453592)./(data1.Height*0.0254).^2; </span><span class = "S14">% creates a new column (variable) in the data containing the BMI</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">data1(1:5,:)</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">min(data1.BMI) </span><span class = "S14">% displays the minimum BMI value</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">max(data1.BMI) </span><span class = "S14">% displays the maximum BMI value</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data1(data1.BMI&gt;24,:) </span><span class = "S14">% displays all subjects with BMI values greater than 24</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">nsi=(data1.Smoker==false); </span><span class = "S14">% creates a logical non-smoker index </span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data1.BMI(nsi) </span><span class = "S14">% displays BMI of subjects that do not smoke</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data1 = sortrows(data1,</span><span class = "S15">'RowNames'</span><span class = "S13">) </span><span class = "S14">% Sort rows by specific columns</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">data1(1:5,:)</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data1 = sortrows(data1,</span><span class = "S15">'BMI'</span><span class = "S16">)</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">data1(1:5,:)</span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><p class = "S3"><span class = "S4"></span></p><h1 class = "S9"><span class = "S4">Removes columns and fit a multiple line</span><span class = "S4">ar regression </span></h1><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data1.Height=[]; </span><span class = "S14">% remove column Height</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">data1.BMI=[]; </span><span class = "S14">% remove column BMI</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">modelspec = </span><span class = "S15">'Systolic ~ Age + Weight + Gender + Smoker'</span><span class = "S13">; </span><span class = "S14">% specifies the model for multiple linear regression</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">mdl1 = fitlm(data1,modelspec); </span><span class = "S14">% fits a linear regression model using the specification 'modelspec</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">mdl1</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">coefnames = mdl1.CoefficientNames</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">mdl1.Formula</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">coefvals = mdl1.Coefficients(:,1) </span><span class = "S14">% table</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">coefvals = table2array(coefvals)</span></p></div></div></div><p class = "S0"></p><div class = 'SectionBlock containment'><p class = "S3"><span class = "S4"></span></p><h1 class = "S9"><span class = "S4">Predict systolic values for new patients</span></h1><div class = 'LineNodeBlock contiguous'><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">genders = {</span><span class = "S15">'Male'</span><span class = "S13">;</span><span class = "S15">'Female'</span><span class = "S13">;</span><span class = "S15">'Male'</span><span class = "S13">;</span><span class = "S15">'Female'</span><span class = "S16">};</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">ages = [25;30;40;65];</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">smokers = [true;false;true;false];</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S16">weights=[100;105;90;95];</span></p></div><div class = 'inlineWrapper'><p class = "S12 lineNode"><span class = "S13">systolicnew = feval(mdl1,genders,ages,smokers,weights) </span><span class = "S14">% evaluates model (mdl1) to new data and estimates systolic pressure</span></p></div></div></div></div>
+<!-- 
+##### SOURCE BEGIN #####
+%% *MATLAB*
+% 
+%% MATLAB (MATrix LABoratory) is a high-level programming language and interactive environment for algorithm development, data visualization, data analysis, and numeric computation. Core strengths of the system include rapid development, powerful built-in functionality and extensive application-specific functionality provided by both official toolboxes and user-contributed code.
+%% 
+%% MATLAB contains several different parts:
+%% 
+% * *Desktop Tools and Development Environment* *-* This part of MATLAB is the 
+% set of tools and facilities that help you use and become more productive with 
+% MATLAB functions and files. Many of these tools are graphical user interfaces. 
+% It includes: the MATLAB desktop and Command Window, an editor and debugger, 
+% a code analyzer, and browsers for viewing help, the Workspace, and folders.
+% 
+% * *Mathematical Function Library -* This library is a vast collection of computational 
+% algorithms ranging from elementary functions, like sum, sine, cosine, and complex 
+% arithmetic, to more sophisticated functions like matrix inverse, matrix eigenvalues, 
+% and fast Fourier transforms.
+% 
+% * *The Language -* The MATLAB language is a high-level matrix/array language 
+% with control flow statements, functions, data structures, input/output, and 
+% object-oriented programming features. It allows both "programming in the small" 
+% to rapidly create quick programs you do not intend to reuse. You can also do 
+% "programming in the large" to create complex application programs intended for 
+% reuse.
+% 
+% * *Graphics -* MATLAB has extensive facilities for displaying vectors and 
+% matrices as graphs, as well as annotating and printing these graphs. It includes 
+% high-level functions for two-dimensional and three-dimensional data visualization, 
+% image processing, animation, and presentation graphics. It also includes low-level 
+% functions that allow you to fully customize the appearance of graphics as well 
+% as to build complete graphical user interfaces on your MATLAB applications.
+% 
+% * *External Interfaces -* The external interfaces library allows you to write 
+% C and Fortran programs that interact with MATLAB. It includes facilities for 
+% calling routines from MATLAB (dynamic linking), for calling MATLAB as a computational 
+% engine, and for reading and writing MAT-files.
+%% **
+%% *References*
+% **
+%% *A MATLAB Tutorial -  *<https://people.math.osu.edu/overman.2/matlab.pdf https://people.math.osu.edu/overman.2/matlab.pdf>
+%% *        Ed Overman, Department of Mathematics, The Ohio State University*
+%% **
+%% *Introduction to MATLAB for engineering students - *<http://www.mccormick.northwestern.edu/docs/efirst/matlab.pdf http://www.mccormick.northwestern.edu/docs/efirst/matlab.pdf>
+%% *       David Houcque, Northwestern University*
+%% **
+%% *An Introduction to  Statistical Learning (Advertising data) - *<http://www-bcf.usc.edu/~gareth/ISL http://www-bcf.usc.edu/~gareth/ISL>
+%% *       Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani   *
+%% **
+%% *Summary*
+%% 
+%% We are going to use two distinct datasets (Advertising and Patients) to:
+% 
+% 
+% * *Read and write data to files*
+% 
+% * *Analyze and manipulate data*
+% 
+% * *Display graphically data*
+% 
+% * *Fit linear regression and predict new outcomes*
+%% **
+%% *Advertising data*
+%% **
+%% *The advertising data set consists of the sales of that product in 200 different markets, along with advertising budgets for the product in each of those markets for three different media: TV, radio, and newspaper. Sales is represented in thousands of units, as a function of TV, radio, and newspaper budgets, represented in thousands of dollars.*
+% **
+%% Load the dataset and look at the characteristics of the data
+
+clear % removes variables from the workspace
+[type, sheets] = xlsfinfo('Advertising.xls'); % collects information about the excel file
+type
+sheets
+who % displays existing variables
+whos % displays existing variables with detailed info
+
+[num,txt] = xlsread('Advertising.xls'); %  reads excel file
+num
+txt
+size(num) % obtains size of numerical data obtained from the file
+size(txt) % obtains size of text data obtained from the file
+
+data0 = importdata('Advertising.xls'); % imports data from the file
+data0
+
+class(data0) % obtains the class of the variable data0
+data0.data % displays the data field of structure data0
+data1 = readtable('Advertising.xls'); % reads data from the file into a table
+data1
+%% **
+%% *"table" is a data type for collecting heterogeneous data and metadata properties such as variable names, row names, descriptions, and variable units, in a single container. Each variable in a table can have a different data type, but must have the same number of rows.*
+
+summary(data1) % displays a summary of the table
+
+[sizeX,sizeY] = size(data1) % obtains size of the table
+data1(1:5,:) % displays the first five lines of the table
+data1(1:5,{'TV','Radio'}) % displays the first five lines of specific columns in the data
+aux1 = data1(:,'TV') % assigns to variable aux1 a slice of the table containing the column 'TV'
+class(aux1) % obtains the class of the variable
+
+aux2 = data1.TV % assigns to aux2 values on the table under column 'TV'
+class(aux2) % obtains the class of the variable
+%% **
+%% *data1 is not even close to real data you would get most of the times, so lets introduce a number of 'other' characters in our data columns in random locations. Then we will save this data into a file and load it again.*
+% **
+%% Make a number of small modifications in the data and save it into a file
+
+data2 = data1; % data2 is assigned the same table data1 is assigned to
+data2.TV(1:3)=' '; % assigns the first three values of variable 'TV' to ''
+data2.TV(4:6)='.'; % assigns the second three values of variable 'TV' to '.'
+
+summary(data2)
+
+data2.TV(1:10) % displays the first 10 values of TV variable (column) on table data2
+
+data2.TV=char(data2.TV) % converts TV values to characters
+summary(data2)
+data2 = data1; % let reset the data
+data2.TV=categorical(data2.TV); % converts 'TV' to categorical
+data2.Radio=categorical(data2.Radio); % converts 'Radio' to categorical
+data2.Newspaper=categorical(data2.Newspaper); % converts 'TV' to categorical
+data2.Sales=categorical(data2.Sales); % converts 'Sales' to categorical
+
+data2.TV(randi(sizeX,3,1))= '.'; % assigns the character '.' to three random positions on the 'TV' column
+data2.Radio(randi(sizeX,3,1))= ' '; % assigns the character ' ' to three random positions on the 'Radio' column
+data2.Newspaper(randi(sizeX,3,1))= 'Na'; % assigns the characters 'Na' to three random positions on the'Newspaper' column
+data2.Sales(randi(sizeX,3,1))= '-99'; % assigns the numeric literal '-99' to three random positions on the 'Sales' column
+
+data2 % displays the new data2
+summary(data2)
+
+writetable(data2,'Advertising2.txt','Delimiter',' ') % write table to file 'Advertising2.txt'
+%% 
+% 
+%% Read again the data with additional specifications and handle missing values
+
+
+data3 = readtable('Advertising2.txt'); % read table and assigns it to variable data3
+data3
+summary(data3)
+data4 = readtable('Advertising2.txt','TreatAsEmpty',{'.','Na','<undefined>'}) % reads table with an additional argument specifying NaN ('Not a Number')
+summary(data4)
+TF = ismissing(data4,{NaN -99}); % indicates which elements of the table contain missing values
+any(TF,2) % tests for values different than zero along dimensions 
+data4(any(TF,2),:) % displays all lines for which there are missing values
+data4 = standardizeMissing(data4,-99) % considers the numeric literal as NaN
+summary(data4)
+
+data5 = fillmissing(data4,'previous') % imputation based on previous value in the table
+data6 = rmmissing(data4) % remove lines that contain any missing values
+%% 
+%% Display the data graphically
+
+clear
+data1 = readtable('Advertising.xls','ReadRowNames',1); % read data in the provided excel file into table and assigns it to data1
+summary(data1)
+
+figure(1); % creates a figure window
+hist(data1.Sales); % displays a histogram of variable Sales
+figure(2);
+scatter(data1.TV,data1.Sales) % creates a scatter of Sales (y axis) as a function of TV (x axis)
+figure(3);
+scatter(data1.Radio,data1.Sales) % creates a scatter of Sales (y axis) as a function of Radio (x axis)
+figure(4);
+scatter(data1.Newspaper,data1.Sales) % creates a scatter of Sales (y axis) as a function of Newspaper (x axis)
+%% 
+% 
+%% Fit a linear regression and display predicted values 
+
+close all;
+modelspec1 = 'Sales ~ TV'; % specifies the model for linear regression
+mdl1 = fitlm(data1,modelspec1); % fits a linear regression model using the specification 'modelspec1
+mdl1 % displays the outcome of the model
+figure(2);
+scatter(data1.TV,data1.Sales,'b'); % creates a scatter of Sales (y axis) as a function of TV advertising (x axis)
+hold on; % retains current plot when adding new plots
+plot(data1.TV,mdl1.predict,'r'); % plot predicted values with a red line
+xlabel('TV Advertising') % sets x label
+ylabel('Sales') % sets y label
+legend('Raw Data','Fit'); % sets legend
+title('Example of a linear regression') % sets title
+set(gca,'FontWeight','bold','FontSize',32); % sets graphics object properties
+axis([0 300 0 30]) ; % sets both x and y axis ranges
+%% 
+% 
+%% Fit a multiple linear regression
+
+
+modelspec2 = 'Sales ~ TV + Radio + Newspaper'; % specifies the model for linear regression
+mdl2 = fitlm(data1,modelspec2); % fits a linear regression model using the specification 'modelspec2
+mdl2 % displays the outcome of the model
+
+
+%% **
+%% *Patients data*
+% **
+%% *The patient's data contains information on 100 hospital patients. This information includes patient's age, gender, weight, height as well as smoking status and measured pressures (systolic and diastolic). This dataset already exists in MATLAB.*
+% **
+%% Load the dataset and look at the characteristics of the data
+
+
+clear
+who
+load patients % loads several variables into Matlab's workspace
+whos
+data1 = table(Gender,Age,Smoker,Height,Weight,Systolic); % creates a table from the specified variables and assigns it to data1
+[X,Y]=size(data1); % obtains the size of the table
+data1(1:5,:) % displays the first 5 lines of the data
+summary(data1) % displays a summary of the data
+data1.Gender=categorical(data1.Gender) % converts gender from a cell array of characters to a categorical variable
+summary(data1)
+data1.Properties.RowNames = LastName; % assigns a label index to the rows of the table, according to an existing cell array 'LastName'
+data1(1:5,:)
+data1({'Smith','Johnson'},:) % displays info on 'Smith' and 'Johnson' (note: all columns of the data are displayed)
+data1('Johnson',{'Age','Weight'}) % displays the values of only two variables of one single person
+%% 
+%% Creates a new column on the table and obtain subsets according to specificed conditions
+
+data1.BMI = (data1.Weight*0.453592)./(data1.Height*0.0254).^2; % creates a new column (variable) in the data containing the BMI
+data1(1:5,:)
+min(data1.BMI) % displays the minimum BMI value
+max(data1.BMI) % displays the maximum BMI value
+data1(data1.BMI>24,:) % displays all subjects with BMI values greater than 24
+nsi=(data1.Smoker==false); % creates a logical non-smoker index 
+data1.BMI(nsi) % displays BMI of subjects that do not smoke
+data1 = sortrows(data1,'RowNames') % Sort rows by specific columns
+data1(1:5,:)
+data1 = sortrows(data1,'BMI')
+data1(1:5,:)
+%% 
+% 
+%% Removes columns and fit a multiple linear regression 
+
+data1.Height=[]; % remove column Height
+data1.BMI=[]; % remove column BMI
+modelspec = 'Systolic ~ Age + Weight + Gender + Smoker'; % specifies the model for multiple linear regression
+mdl1 = fitlm(data1,modelspec); % fits a linear regression model using the specification 'modelspec
+mdl1
+coefnames = mdl1.CoefficientNames
+mdl1.Formula
+coefvals = mdl1.Coefficients(:,1) % table
+coefvals = table2array(coefvals)
+%% 
+% 
+%% Predict systolic values for new patients
+
+genders = {'Male';'Female';'Male';'Female'};
+ages = [25;30;40;65];
+smokers = [true;false;true;false];
+weights=[100;105;90;95];
+systolicnew = feval(mdl1,genders,ages,smokers,weights) % evaluates model (mdl1) to new data and estimates systolic pressure
+##### SOURCE END #####
+--></body></html>
