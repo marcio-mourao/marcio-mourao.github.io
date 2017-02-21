@@ -1,1 +1,1 @@
-<iframe src="index2.html">
+<iframe src="index2.html" width="800" height="1200">
