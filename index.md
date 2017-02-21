@@ -1,4 +1,4 @@
-## Introduction to MATLA
+## Introduction to MATLAB
 
 ### Part I
 
