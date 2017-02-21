@@ -2,7 +2,7 @@
 
 ### Part I
 
-[Repository](https://github.com/marcio-mourao/intro2MATLAB-1)
+<a href="https://github.com/marcio-mourao/intro2MATLAB-1" id="view-on-github" class="button"><span>Repository</span></a>
 
 ### Part II
 
@@ -18,4 +18,4 @@
 
 [Repository](https://github.com/marcio-mourao/socialDataScience-2)
 
-<a href="https://github.com/marcio-mourao/marcio-mourao.github.io" id="view-on-github" class="button"><span>View on GitHub</span></a>
+
