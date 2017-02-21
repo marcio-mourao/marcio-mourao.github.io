@@ -27,3 +27,37 @@
 <a href="https://github.com/marcio-mourao/socialDataScience-2" target="_blank">Repository</a>
 
 
+sdf
+sd
+fs
+df
+s
+sd
+
+dfs
+f
+s
+
+
+
+sf
+sd
+f
+s
+fs
+df
+s
+f
+sd
+f
+
+
+
+s
+df
+sd
+f
+fd
+
+f
+f
