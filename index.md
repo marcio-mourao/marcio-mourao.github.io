@@ -1,1 +1,1 @@
-<iframe src="index2.html" width="800" height="1200" style="background-color: #242424">
+<iframe src="index2.html" width="800" height="1200" style="background-color: #212121">
