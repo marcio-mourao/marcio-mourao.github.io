@@ -2,10 +2,10 @@
 
 ## Introduction to MATLAB
 
-###Part I
+### Part I
 
 [Repository](https://github.com/marcio-mourao/intro2MATLAB-1)
 
-###Part II
+### Part II
 
 [Repository](https://github.com/marcio-mourao/intro2MATLAB-2)
