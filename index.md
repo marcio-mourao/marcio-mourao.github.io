@@ -8,7 +8,7 @@
 
 [Repository](https://github.com/marcio-mourao/intro2MATLAB-2)
 
-## Social Science Data Workshop
+## Social Data Science
 
 ### Part I
 
