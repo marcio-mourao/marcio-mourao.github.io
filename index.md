@@ -2,7 +2,7 @@
 
 ### Part I
 
-<a href="https://github.com/marcio-mourao/intro2MATLAB-1" id="view-on-github" class="button"><span>Repository</span></a>
+[Repository](https://github.com/marcio-mourao/intro2MATLAB-1)
 
 ### Part II
 
