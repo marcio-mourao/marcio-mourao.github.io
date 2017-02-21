@@ -2,6 +2,7 @@
   <h2>On this page:</h2>
   <ul>
     <li><a href="#MATLAB">Introduction to MATLAB</a></li>
+    <li><a href="#SocialDataScience">Social Data Science</a></li>
   </ul>
 </nav>
 
