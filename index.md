@@ -1,9 +1,11 @@
-## Welcome to Github pages
+# Workshops
 
-Lets try this out!
+## Introduction to MATLAB
 
-### Workshop - Intro to MATLAB II ----- 02/20/17, 02/23/17
+###Part I
 
-[Repository] (https://github.com/marcio-mourao/intro2MATLAB-2)
+[Repository](https://github.com/marcio-mourao/intro2MATLAB-1)
 
+###Part II
 
+[Repository](https://github.com/marcio-mourao/intro2MATLAB-2)
