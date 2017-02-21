@@ -1,5 +1,3 @@
-# Workshops
-
 ## Introduction to MATLAB
 
 ### Part I
