@@ -2,11 +2,11 @@
 
 ### Part I
 
-[Repository](https://github.com/marcio-mourao/intro2MATLAB-1)
+<a href="https://github.com/marcio-mourao/intro2MATLAB-1" target="_blank">Repository</a>
 
 ### Part II
 
-[Repository](https://github.com/marcio-mourao/intro2MATLAB-2
+[Repository](https://github.com/marcio-mourao/intro2MATLAB-2)
 
 ## Social Data Science
 
