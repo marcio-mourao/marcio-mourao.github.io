@@ -1,10 +1,29 @@
-<nav role="navigation" class="table-of-contents">
-  <h2>On this page:</h2>
-  <ul>
-    <li><a href="#MATLAB">Introduction to MATLAB</a></li>
-    <li><a href="#SocialDataScience">Social Data Science</a></li>
-  </ul>
-</nav>
+var newLine, el, title, link;
+
+var ToC =
+  "<nav role='navigation' class='table-of-contents'>" +
+    "<h2>On this page:</h2>" +
+    "<ul>";
+    
+$("h2").each(function() {
+  el = $(this);
+  title = el.text();
+  link = "#" + el.attr("id");
+  
+  newLine =
+    "<li>" +
+      "<a href='" + link + "'>" +
+        title +
+      "</a>" +
+    "</li>";
+    
+  TOC += newLine;
+});
+
+ToC +=
+   "</ul>" +
+  "</nav>";
+
 
 <h2 id="MATLAB">Introduction to MATLAB</h2>
 
@@ -25,39 +44,3 @@
 ### Part II
 
 <a href="https://github.com/marcio-mourao/socialDataScience-2" target="_blank">Repository</a>
-
-
-sdf
-sd
-fs
-df
-s
-sd
-
-dfs
-f
-s
-
-
-
-sf
-sd
-f
-s
-fs
-df
-s
-f
-sd
-f
-
-
-
-s
-df
-sd
-f
-fd
-
-f
-f
