@@ -1,2 +1,11 @@
 theme: jekyll-theme-slate
-title: Workshops
+#title: Workshops
+
+name: "my-website"
+navbar:
+  title: "Workshops"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
