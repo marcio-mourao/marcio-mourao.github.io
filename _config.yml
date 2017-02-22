@@ -6,6 +6,4 @@ navbar:
   title: "Workshops"
   left:
     - text: "Home"
-      href: index.html
-    - text: "About"
-      href: about.html
+      href: index2.html
