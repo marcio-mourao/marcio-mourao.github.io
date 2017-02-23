@@ -18,6 +18,8 @@ output:
 
 <a href="https://rawgit.com/marcio-mourao/intro2MATLAB-2/master/Workshop5.html" target="_blank">Main Document</a>
 
+<a href="https://rawgit.com/marcio-mourao/intro2MATLAB-2/master/Advertising.xls" target="_blank">Advertising.xls</a>
+
 <a href="https://github.com/marcio-mourao/intro2MATLAB-2" target="_blank">Repository</a>
 
 ### Social Data Science
