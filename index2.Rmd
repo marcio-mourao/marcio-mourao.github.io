@@ -6,6 +6,20 @@ output:
     toc_float: yes
 ---
 
+### Unsupervised learning in Python using Scikit-learn (PCA and K-Means)
+
+<a href="https://rawgit.com/marcio-mourao/Unsupervised-Learning-PCA-K-Means/master/PCA-K-Means.pdf" target="_blank">Presentation (PDF)</a>
+
+<a href="https://rawgit.com/marcio-mourao/Unsupervised-Learning-PCA-K-Means/master/PCA.py" target="_blank">PCA Python file</a>
+
+<a href="https://rawgit.com/marcio-mourao/Unsupervised-Learning-PCA-K-Means/master/K-Means-PartI.py" target="_blank">K-Means Python file (Part I)</a>
+
+<a href="https://rawgit.com/marcio-mourao/Unsupervised-Learning-PCA-K-Means/master/K-Means-PartII.py" target="_blank">K-Means Python file (Part II)</a>
+
+<a href="https://rawgit.com/marcio-mourao/Unsupervised-Learning-PCA-K-Means/master/aux_funcs.py" target="_blank">Auxiliary functions Python file</a>
+
+<a href="https://github.com/marcio-mourao/Unsupervised-Learning-PCA-K-Means" target="_blank">Repository</a>
+
 ### Introduction to MATLAB
 
 #### Part I
