@@ -68,7 +68,7 @@ output:
 
 <a href="https://rawgit.com/marcio-mourao/socialDataScience-4/master/Workshop4.ipynb" target="_blank">Main Document (Python notebook)</a>
 
-<a href="https://rawgit.com/marcio-mourao/socialDataScience-3/master/adult.csv" target="_blank">Data file (csv file)</a>
+<a href="https://rawgit.com/marcio-mourao/socialDataScience-4/master/adult.csv" target="_blank">Data file (csv file)</a>
 
 <a href="https://github.com/marcio-mourao/socialDataScience-4" target="_blank">Repository</a>
 
