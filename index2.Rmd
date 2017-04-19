@@ -8,6 +8,8 @@ output:
 
 ### Supervised learning in Python using Scikit-learn (Random Forests and SVMs)
 
+<a href="https://rawgit.com/marcio-mourao/Supervised-Learning-RF-SVM/master/RF-SVM.pptx" target="_blank">Presentation (PPT)</a>
+
 <a href="https://rawgit.com/marcio-mourao/Supervised-Learning-RF-SVM/master/RF-SVM.pdf" target="_blank">Presentation (PDF)</a>
 
 <a href="https://rawgit.com/marcio-mourao/Supervised-Learning-RF-SVM/master/Workshop.ipynb" target="_blank">Main Document (Python notebook)</a>
