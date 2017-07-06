@@ -56,6 +56,12 @@ output:
 
 <a href="https://github.com/marcio-mourao/intro2MATLAB-2" target="_blank">Repository</a>
 
+#### Part III
+
+<a href="https://rawgit.com/marcio-mourao/intro2MATLAB-3/master/BSC_Workshop.html" target="_blank">Main Document</a>
+
+<a href="https://github.com/marcio-mourao/intro2MATLAB-3" target="_blank">Repository</a>
+
 ### Social Data Science
 
 #### Part I
