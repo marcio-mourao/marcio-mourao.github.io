@@ -42,6 +42,7 @@ output:
 
 ### Introduction to MATLAB
 
+<!--
 #### Part I
 
 <a href="https://rawgit.com/marcio-mourao/intro2MATLAB-1/master/Workshop4.html" target="_blank">Main Document</a>
@@ -54,9 +55,10 @@ output:
 
 <a href="https://rawgit.com/marcio-mourao/intro2MATLAB-2/master/Advertising.xls" target="_blank">Advertising.xls</a>
 
-<a href="https://github.com/marcio-mourao/intro2MATLAB-2" target="_blank">Repository</a>
+<a href="https://github.com/marcio-mourao/intro2MATLAB-2" target="_blank">Repository</a> 
+-->
 
-#### Part III
+#### Part I
 
 <a href="https://rawgit.com/marcio-mourao/intro2MATLAB-3/master/BSC_Workshop.html" target="_blank">Main Document</a>
 
