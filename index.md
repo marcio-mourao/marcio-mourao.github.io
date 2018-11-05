@@ -1,6 +1,4 @@
-# Workshops
-
-## Data Processing in Python using Numpy
+# Data Processing in Python using Numpy
 
 [Main Document](https://github.com/marcio-mourao/Data-Processing-In-Python-Using-Numpy/blob/master/Workshop.ipynb)
 
