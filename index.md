@@ -14,6 +14,6 @@
 
 <a href="https://github.com/marcio-mourao/Data-Processing-In-Python-Using-Pandas/blob/master/Workshop.ipynb" target="_blank"> Main Document (ipynb)</a>
 
-<a href="https://github.com/marcio-mourao/Data-Processing-In-Python-Using-Pandas/blob/master/hospital.csv"> Data file (csv)</a>
+<a href="https://raw.githubusercontent.com/marcio-mourao/Data-Processing-In-Python-Using-Pandas/master/hospital.csv"> Data file (csv)</a>
 
 <a href="https://github.com/marcio-mourao/Data-Processing-In-Python-Using-Pandas" target="_blank"> Repository</a>
